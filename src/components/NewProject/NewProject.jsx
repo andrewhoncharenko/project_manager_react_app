@@ -11,7 +11,7 @@ export default function NewProject({onAdd, onCancel}) {
 
     function handleSave() {
         const enteredTitle = title.current.value;
-        const enteredDescription = title.current.value;
+        const enteredDescription = description.current.value;
         const enteredDueDate = dueDate.current.value;
 
         console.log(enteredDescription.trim() === "");
