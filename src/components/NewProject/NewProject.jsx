@@ -14,8 +14,6 @@ export default function NewProject({onAdd, onCancel}) {
         const enteredDescription = description.current.value;
         const enteredDueDate = dueDate.current.value;
 
-        console.log(enteredDescription.trim() === "");
-
         if(enteredTitle.trim() === "" || enteredDescription.trim() === "" || enteredDueDate.trim() === "") {
             modal.current.open();
             return;
